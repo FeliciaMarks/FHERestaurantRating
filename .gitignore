@@ -1,0 +1,75 @@
+# Hardhat
+node_modules
+artifacts
+cache
+coverage
+coverage.json
+typechain
+typechain-types
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# OS
+.DS_Store
+*.pem
+Thumbs.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Build outputs
+dist
+build
+out
+
+# Testing
+.nyc_output
+*.lcov
+
+# Misc
+*.tgz
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
+
+# Gas reporter
+gas-report.txt
+
+# Deployment artifacts
+deployments/*.json
+!deployments/.gitkeep
+
+# Simulation results
+simulations/*.json
+!simulations/.gitkeep
+
+# Flattened contracts
+flattened/
+
+# Local development
+.cache/
