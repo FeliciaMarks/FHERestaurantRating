@@ -1,0 +1,17 @@
+{
+  "contracts/**/*.sol": [
+    "solhint",
+    "prettier --write"
+  ],
+  "test/**/*.js": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "scripts/**/*.js": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "*.{json,md}": [
+    "prettier --write"
+  ]
+}
