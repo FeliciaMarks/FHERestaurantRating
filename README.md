@@ -12,6 +12,23 @@ A confidential dining experience review platform built with Fully Homomorphic En
 
 The Private Restaurant Rating System revolutionizes how diners share their dining experiences by leveraging cutting-edge homomorphic encryption. Users can submit honest, detailed restaurant reviews while maintaining complete confidentiality of their ratings. Restaurant owners can benefit from aggregate feedback without compromising individual reviewer privacy.
 
+### Smart Contract
+Built on fhEVM (Fully Homomorphic Encryption Virtual Machine) using Zama's encryption library.
+
+**Contract Address**: `0x0f3e553484dF29aF3423AD6E301b571a255b1142`
+
+### Core Functions
+- `registerRestaurant()`: Register a new restaurant with name and location
+- `submitReview()`: Submit encrypted ratings and comments
+- `getRestaurant()`: Retrieve restaurant details and review count
+- `hasReviewed()`: Check if a user has already reviewed a specific restaurant
+
+## 🎬 Demo
+
+**Live Application**: [https://fhe-restaurant-rating.vercel.app/](https://fhe-restaurant-rating.vercel.app/)
+
+**PrivateRestaurantRating.mp4**: See the platform in action with a complete walkthrough of restaurant registration, review submission, and privacy features.
+
 ## 🔐 Core Concept
 
 ### Fully Homomorphic Encryption (FHE)
@@ -75,7 +92,7 @@ Built on fhEVM (Fully Homomorphic Encryption Virtual Machine) using Zama's encry
 
 ## 🎬 Demo
 
-**Live Application**: [https://private-restaurant-rating.vercel.app/](https://private-restaurant-rating.vercel.app/)
+**Live Application**: [https://fhe-restaurant-rating.vercel.app/](https://fhe-restaurant-rating.vercel.app/)
 
 **PrivateRestaurantRating.mp4**: See the platform in action with a complete walkthrough of restaurant registration, review submission, and privacy features.
 
@@ -288,7 +305,7 @@ private-restaurant-rating-system/
 ### Frontend Usage
 
 The frontend is available in `index.html` and can be accessed via:
-- **Live Demo**: [https://private-restaurant-rating.vercel.app/](https://private-restaurant-rating.vercel.app/)
+- **Live Demo**: [https://fhe-restaurant-rating.vercel.app/](https://fhe-restaurant-rating.vercel.app/)
 - **Local**: Open `index.html` in a web browser
 
 ## 📖 Using the Platform
@@ -401,7 +418,7 @@ private-restaurant-rating-system/
 
 ## 🔗 Links
 
-- **Live Demo**: [https://private-restaurant-rating.vercel.app/](https://private-restaurant-rating.vercel.app/)
+- **Live Demo**: [https://fhe-restaurant-rating.vercel.app/](https://fhe-restaurant-rating.vercel.app/)
 - **Sepolia Contract**: [https://sepolia.etherscan.io/address/0x0f3e553484dF29aF3423AD6E301b571a255b1142](https://sepolia.etherscan.io/address/0x0f3e553484dF29aF3423AD6E301b571a255b1142)
 - **Zama Documentation**: [https://docs.zama.ai](https://docs.zama.ai)
 - **Hardhat Documentation**: [https://hardhat.org/docs](https://hardhat.org/docs)
