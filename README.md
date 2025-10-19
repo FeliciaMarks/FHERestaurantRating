@@ -1,6 +1,5 @@
 # Private Restaurant Rating System
 
-[![Test and Coverage](https://github.com/YOUR_USERNAME/private-restaurant-rating-system/workflows/Test%20and%20Coverage/badge.svg)](https://github.com/YOUR_USERNAME/private-restaurant-rating-system/actions)
 [![codecov](https://codecov.io/gh/YOUR_USERNAME/private-restaurant-rating-system/branch/main/graph/badge.svg)](https://codecov.io/gh/YOUR_USERNAME/private-restaurant-rating-system)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.24-blue.svg)](https://soliditylang.org/)
 [![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-yellow.svg)](https://hardhat.org/)
@@ -27,7 +26,7 @@ Built on fhEVM (Fully Homomorphic Encryption Virtual Machine) using Zama's encry
 
 **Live Application**: [https://fhe-restaurant-rating.vercel.app/](https://fhe-restaurant-rating.vercel.app/)
 
-**PrivateRestaurantRating.mp4**: See the platform in action with a complete walkthrough of restaurant registration, review submission, and privacy features.
+**demo.mp4**: See the platform in action with a complete walkthrough of restaurant registration, review submission, and privacy features.
 
 ## 🔐 Core Concept
 
@@ -94,7 +93,7 @@ Built on fhEVM (Fully Homomorphic Encryption Virtual Machine) using Zama's encry
 
 **Live Application**: [https://fhe-restaurant-rating.vercel.app/](https://fhe-restaurant-rating.vercel.app/)
 
-**PrivateRestaurantRating.mp4**: See the platform in action with a complete walkthrough of restaurant registration, review submission, and privacy features.
+**demo.mp4**: See the platform in action with a complete walkthrough of restaurant registration, review submission, and privacy features.
 
 ## 🚀 Getting Started
 
