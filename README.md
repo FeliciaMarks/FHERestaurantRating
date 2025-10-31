@@ -67,6 +67,14 @@ This platform utilizes FHE smart contracts to enable computations on encrypted d
 - **Atmosphere**: Ambiance, cleanliness, comfort
 - **Price/Value**: Worth for money, portion sizes
 
+### 🆕 Next.js Frontend Application
+- **Modern Stack**: Built with Next.js 14, React 18, and TypeScript
+- **Full Type Safety**: Complete TypeScript coverage with custom type definitions
+- **Custom Hooks**: Reusable React hooks for wallet connection and restaurant operations
+- **Responsive Design**: Beautiful UI with Tailwind CSS
+- **FHEVM SDK Integration**: Seamless encryption/decryption using @fhevm/sdk
+- **Production Ready**: Optimized build with code splitting and lazy loading
+
 ## 🏗️ Technical Architecture
 
 ### Development Framework
@@ -301,11 +309,35 @@ private-restaurant-rating-system/
 └── README.md           # This file
 ```
 
-### Frontend Usage
+### Frontend Application
 
-The frontend is available in `index.html` and can be accessed via:
-- **Live Demo**: [https://fhe-restaurant-rating.vercel.app/](https://fhe-restaurant-rating.vercel.app/)
-- **Local**: Open `index.html` in a web browser
+The frontend is a modern Next.js 14 application with full TypeScript support:
+
+**Two Deployment Options:**
+
+1. **Next.js Application** (Recommended - Located in `restaurant-rating/`):
+   - Full Next.js 14 with App Router
+   - TypeScript throughout
+   - React 18.2 with custom hooks
+   - Tailwind CSS styling
+   - @fhevm/sdk integration
+   - Custom wallet and restaurant hooks
+
+   **Run Locally:**
+   ```bash
+   cd restaurant-rating
+   npm install
+   npm run dev
+   ```
+   Visit: [http://localhost:3001](http://localhost:3001)
+
+2. **Static HTML Version** (Legacy - `index.html` in project root):
+   - Simple HTML5 interface
+   - Vanilla JavaScript
+   - CDN-based libraries
+   - Open `index.html` in browser
+
+**Live Demo**: [https://fhe-restaurant-rating.vercel.app/](https://fhe-restaurant-rating.vercel.app/)
 
 ## 📖 Using the Platform
 
@@ -354,20 +386,29 @@ The frontend is available in `index.html` and can be accessed via:
 - **Framework**: Hardhat v2.19.0
 - **Language**: Solidity ^0.8.24
 - **Blockchain**: Ethereum-compatible fhEVM
-- **Encryption**: Zama fhevmjs library
+- **Encryption**: Zama fhevmjs library (v0.5.0)
 - **Testing**: Chai, Hardhat Network Helpers
 - **Libraries**: Ethers.js v6.9.0
 
-### Frontend
-- **UI**: HTML5, CSS3, Vanilla JavaScript
-- **Web3**: Ethers.js v5.7.2
+### Frontend Application (restaurant-rating/)
+- **Framework**: Next.js 14.0.0 with App Router
+- **Language**: TypeScript 5.0
+- **UI Library**: React 18.2.0 + React DOM 18.2.0
+- **Styling**: Tailwind CSS 3.3.6
+- **Web3**: Ethers.js v6.9.0
+- **FHE Integration**: @fhevm/sdk (custom package)
+- **State Management**: React Hooks (useWallet, useRestaurant)
 - **Deployment**: Vercel
+- **Build Tool**: PostCSS + Autoprefixer
+- **Code Quality**: ESLint with Next.js config
 
 ### Development Tools
 - **Compilation**: Hardhat with optimizer enabled
 - **Testing**: Hardhat test suite with coverage reporting
 - **Deployment Scripts**: Automated deployment and verification
 - **Network**: Sepolia testnet (Chain ID: 11155111)
+- **TypeScript**: Full type safety with custom type definitions
+- **Linting**: ESLint + Solhint for Solidity
 
 ## 📊 Smart Contract Events
 
@@ -389,9 +430,30 @@ private-restaurant-rating-system/
 │   └── simulate.js        # Simulation script for testing
 ├── test/                   # Test files
 │   └── PrivateRestaurantRating.test.js
+├── restaurant-rating/      # 🆕 Next.js Frontend Application
+│   ├── src/
+│   │   ├── app/           # Next.js 14 App Router
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   └── globals.css
+│   │   ├── lib/           # Smart contract & FHEVM utilities
+│   │   │   ├── contract.ts
+│   │   │   └── fhevm.ts
+│   │   ├── hooks/         # Custom React hooks
+│   │   │   ├── useWallet.ts
+│   │   │   └── useRestaurant.ts
+│   │   └── types/         # TypeScript type definitions
+│   │       ├── index.ts
+│   │       └── window.d.ts
+│   ├── contracts/         # Contract reference
+│   ├── next.config.js     # Next.js configuration
+│   ├── tailwind.config.ts # Tailwind CSS configuration
+│   ├── tsconfig.json      # TypeScript configuration
+│   └── package.json       # Frontend dependencies
 ├── deployments/            # Deployment artifacts (auto-generated)
 ├── artifacts/              # Compiled contracts (auto-generated)
 ├── cache/                  # Hardhat cache (auto-generated)
+├── index.html             # Legacy static HTML version
 ├── hardhat.config.js       # Hardhat configuration
 ├── package.json            # Project dependencies and scripts
 ├── .env.example            # Environment variables template
@@ -401,6 +463,8 @@ private-restaurant-rating-system/
 ```
 
 ## 📜 Available Scripts
+
+### Smart Contract Scripts (Root Directory)
 
 | Command | Description |
 |---------|-------------|
@@ -414,6 +478,17 @@ private-restaurant-rating-system/
 | `npm run simulate:sepolia` | Run simulation script |
 | `npm run node` | Start local Hardhat node |
 | `npm run clean` | Clean artifacts and cache |
+| `npm run lint` | Run Solidity linter (Solhint) |
+| `npm run format` | Format code with Prettier |
+
+### Frontend Scripts (restaurant-rating/)
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start Next.js development server (port 3001) |
+| `npm run build` | Build Next.js production bundle |
+| `npm start` | Start Next.js production server |
+| `npm run lint` | Run ESLint on frontend code |
 
 ## 🔗 Links
 
